@@ -144,6 +144,8 @@ class _CourseScreenState extends ConsumerState<CourseScreen> {
   void _showInputForm(BuildContext context, Course course) {
     showModalBottomSheet(
       context: context,
+      useRootNavigator: true,
+      isScrollControlled: true,
       builder: (BuildContext context) {
         return CourseModal(
           addComment: addComment,

@@ -22,6 +22,7 @@ class CourseModal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.height * 0.6,
       padding: const EdgeInsets.all(16.0),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -115,7 +116,8 @@ class CourseModal extends StatelessWidget {
           const SizedBox(height: 10),
 
           TextField(
-            scrollPadding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+            scrollPadding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).viewInsets.bottom),
             onChanged: (value) {
               commentController.text = value;
             },
