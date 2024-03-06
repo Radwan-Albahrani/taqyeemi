@@ -82,16 +82,15 @@ class _TaqyeemiGPTScreenState extends ConsumerState<TaqyeemiGPTScreen> {
                   ),
                   const SizedBox(height: 10),
                   SuggestionMessage(
-                    "Who is the best instructor?",
-                    sendMessage,
-                    isLoading
-                  ),
+                      "Who is the best instructor?", sendMessage, isLoading),
                   SuggestionMessage(
-                      "How do i secure A+ in biology based off students", sendMessage, isLoading),
-                  SuggestionMessage(
-                      "Which course has highest average?", sendMessage, isLoading),
-                  SuggestionMessage(
-                      "What students think of Ali AlDhamen?", sendMessage, isLoading),
+                      "How do i secure A+ in biology based off students",
+                      sendMessage,
+                      isLoading),
+                  SuggestionMessage("Which course has highest average?",
+                      sendMessage, isLoading),
+                  SuggestionMessage("What students think of Ali AlDhamen?",
+                      sendMessage, isLoading),
                   const SizedBox(height: 10),
                   Expanded(
                     child: ListView.builder(
@@ -121,7 +120,7 @@ class _TaqyeemiGPTScreenState extends ConsumerState<TaqyeemiGPTScreen> {
                                 MediaQuery.of(context).viewInsets.bottom + 100,
                           ),
                           cursorColor: Pallete.purpleColor,
-                          style: const TextStyle(color: Colors.black),
+                          style: const TextStyle(color: Colors.white),
                           controller: _textEditingController,
                           onChanged: (value) {
                             setState(() {});
