@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluid_bottom_nav_bar/fluid_bottom_nav_bar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:taqyeemi/features/gpt/repository/gpt_repository.dart';
+import 'package:taqyeemi/features/quiz/screens/generate_quiz_screen.dart';
 
 import '../../../theme/pallete.dart';
 import '../delegates/search_courses_delegate.dart';
@@ -24,6 +25,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   final List<Widget> _children = [
     const CoursesScreen(),
     const InstructorsScreen(),
+    const GenerateQuizScreen(),
   ];
 
   void loadData() {
@@ -105,6 +107,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           ),
           FluidNavBarIcon(
             icon: Icons.people_outline_rounded,
+          ),
+          FluidNavBarIcon(
+            icon: Icons.quiz,
           ),
         ],
       ),

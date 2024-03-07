@@ -13,7 +13,7 @@ class Loader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Center(
+    return Center(
       child: SpinKitPouringHourGlassRefined(
         color: color != null ? color! : Pallete.whiteColor,
         size: 50.0,
