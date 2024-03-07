@@ -38,7 +38,7 @@ class AppNavigationDrawer extends ConsumerWidget {
                   child: Text(
                     "Taqyeemi",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 17,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
