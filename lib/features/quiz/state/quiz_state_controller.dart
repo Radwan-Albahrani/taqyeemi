@@ -8,10 +8,6 @@ final quizStateControllerProvider =
   (ref) => QuizStateController(),
 );
 
-final questionsProvider2 = StateProvider<List<Question>?>((ref) {
-  return null;
-});
-
 class QuizStateController extends StateNotifier<QuizState> {
   QuizStateController() : super(QuizState.initial());
 
