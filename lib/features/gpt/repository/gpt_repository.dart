@@ -112,7 +112,17 @@ class GPTRepository {
       ),
     );
 
-
+    // final chat = await OpenAI.instance.chat.create(
+    //   model: "gpt-3.5-turbo",
+    //   messages: messages,
+    // );
+    // print(chat.choices.first.message);
+    // messages.add(
+    //   OpenAIChatCompletionChoiceMessageModel(
+    //       content: chat.choices.first.message.toString(),
+    //       role: OpenAIChatMessageRole.assistant),
+    // );
+  }
 
   void taqyeemiGPTClear() {
     messages.clear();
@@ -186,8 +196,7 @@ class GPTRepository {
       );
       final addCourseCommentTool = OpenAIFunctionModel.withParameters(
         name: "addCourseComment",
-        description:
-            "add a comment to a course",
+        description: "add a comment to a course",
         parameters: [
           OpenAIFunctionProperty.string(
             isRequired: true,
@@ -225,14 +234,12 @@ class GPTRepository {
           OpenAIFunctionProperty.string(
             isRequired: true,
             name: "courseName",
-            description:
-                "The name of the course to add the comment to",
+            description: "The name of the course to add the comment to",
           ),
           OpenAIFunctionProperty.string(
             isRequired: true,
             name: "courseCode",
-            description:
-                "The code of the course to add the comment to",
+            description: "The code of the course to add the comment to",
           ),
         ],
       );
@@ -312,5 +319,4 @@ class GPTRepository {
       return Future(() => "Sorry, Something went wrong, please try again");
     }
   }
-}
 }
