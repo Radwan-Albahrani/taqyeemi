@@ -29,12 +29,12 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: Column(
               children: [
                 Text(
                   "Your Score: ${quizState.correct.length}/${quizState.correct.length + quizState.incorrect.length}",
-                  style: TextStyle(color: Colors.white, fontSize: 25),
+                  style: const TextStyle(color: Colors.white, fontSize: 25),
                 ),
                 const SizedBox(height: 20),
                 const Text(

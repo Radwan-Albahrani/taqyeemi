@@ -49,7 +49,7 @@ showToast({
             child: Text(
               message,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 14,
               ),
