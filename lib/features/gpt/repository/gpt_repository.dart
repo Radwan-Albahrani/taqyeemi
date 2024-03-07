@@ -112,17 +112,7 @@ class GPTRepository {
       ),
     );
 
-    // final chat = await OpenAI.instance.chat.create(
-    //   model: "gpt-3.5-turbo",
-    //   messages: messages,
-    // );
-    // print(chat.choices.first.message);
-    // messages.add(
-    //   OpenAIChatCompletionChoiceMessageModel(
-    //       content: chat.choices.first.message.toString(),
-    //       role: OpenAIChatMessageRole.assistant),
-    // );
-  }
+
 
   void taqyeemiGPTClear() {
     messages.clear();
@@ -322,4 +312,5 @@ class GPTRepository {
       return Future(() => "Sorry, Something went wrong, please try again");
     }
   }
+}
 }

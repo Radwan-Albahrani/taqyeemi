@@ -43,11 +43,12 @@ class CourseController extends StateNotifier<bool> {
       required BuildContext context}) async {
     state = true;
     Course course = Course(
-        id: courseCode,
-        code: courseCode,
-        name: courseName,
-        creditHours: courseCreditHours,
-        comments: []);
+      id: courseCode,
+      code: courseCode,
+      name: courseName,
+      creditHours: courseCreditHours,
+      comments: [],
+    );
 
     final result = await _courseRepository.addCourse(course);
     state = false;
